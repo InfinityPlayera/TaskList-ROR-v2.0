@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+      @apply mt-3 rounded-lg py-1 px-5 inline-block font-medium cursor-pointer;
+  }
+}
+
+.item {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: move;
+}
+
+#drop-area {
+  margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+<div id="tasklist">
+    <h1 class="font-bold text-lg mb-7">Tasks</h1>
+        <div class="flex">
+            <div>
+                <h1 class="font-bold text-lg mb-7 ml-7">Doing</h1>
+                <ul class="px-5 size-[500px]" data-controller="tasks" data-tasks-target="doingList">
+                    <% @doing_tasks.each do |task| %>
+                        <%= render task %>
+                    <% end %>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold text-lg mb-7 ml-7">Done</h1>
+                <ul class="px-5 size-[500px]" data-controller="tasks" data-tasks-target="doneList">
+                    <% @done_tasks.each do |task| %>
+                        <%= render task %>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+</div>
